@@ -52,7 +52,10 @@ public class maininterface {
 	private JFileChooser fc = new JFileChooser();
 
 	public maininterface() {
-
+		pathwayFileField.setEditable(false);
+		bpFileField.setEditable(false);
+		speciesFileField.setEditable(false);
+		outputDirectoryField.setEditable(false);
 		//Action listeners for the browse buttons in the MainClass.MainClass Interface Form
 		bpL3BrowseButton.addActionListener(new ActionListener() {
 			@Override
@@ -94,7 +97,9 @@ public class maininterface {
 				int selection = fc.showSaveDialog(null);
 				if (selection == JFileChooser.APPROVE_OPTION) {
 					outputFile = fc.getSelectedFile();
-					outputDirectoryField.setText(outputFile.getAbsolutePath());
+					if (outputFile.isDirectory()) {
+						outputDirectoryField.setText(outputFile.getAbsolutePath());
+					}
 				}
 			}
 		});
