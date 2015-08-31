@@ -129,13 +129,6 @@ public class TextOutputHandler {
 							uniProt = matcher.group(1);
 							stringHashSet.add(matcher.group(1));
 							break;
-						} else {
-							matcher = KeyParam.UNIPROT_PATTERN_TWO.matcher(s);
-							if (matcher.find()) {
-								uniProt = matcher.group(1);
-								stringHashSet.add(matcher.group(1));
-								break;
-							}
 						}
 					}
 					if (uniProt.equals("")) {

@@ -37,10 +37,7 @@ public class KeyParam {
 
 	//UniProt Accession Patterns:
 	//Pattern 1 : [A-N,R-Z][0-9][A-Z][A-Z, 0-9][A-Z, 0-9][0-9]
-	public static final Pattern UNIPROT_PATTERN_ONE = Pattern.compile("([A-N,R-Z][0-9][A-Z][A-Z,0-9][A-Z, 0-9][0-9])");
-	//Pattern 2 : [O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9]
-	public static final Pattern UNIPROT_PATTERN_TWO = Pattern.compile("([O,P,Q][0-9][A-Z,0-9][A-Z,0-9][A-Z," +
-			"0-9][0-9])");
+	public static final Pattern UNIPROT_PATTERN_ONE = Pattern.compile("([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})");
 
 	public static final Integer SETTER_USER_SPEC = 0;
 	public static final Integer SETTER_ESET_FILL = 1;

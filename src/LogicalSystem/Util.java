@@ -230,12 +230,6 @@ public class Util {
 				if (matcher.find()) {
 					uniProt = matcher.group(1);
 					break;
-				} else {
-					matcher = KeyParam.UNIPROT_PATTERN_TWO.matcher(s);
-					if (matcher.find()) {
-						uniProt = matcher.group(1);
-						break;
-					}
 				}
 			}
 			if (uniProt.equals("")) {
