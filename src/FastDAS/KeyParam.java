@@ -57,7 +57,7 @@ public class KeyParam {
 	public static final String REACT_URL = "http://www.reactome.org/cgi-bin/eventbrowser_st_id?ST_ID=";
 
 	public static final double SOLVER_INACTIVE = 0.0;
-	public static final String VERSION_NUMBER = "0.1 ALPHA";
+	public static final String VERSION_NUMBER = "1.0.2";
 	public static final String REACTOME_ENTITYSET_FLAG = "Converted from EntitySet in Reactome";
 	public static final String REACTOME_COMPLEX_ENTITYSET_CONTAINING_FLAG = "This Complex contains a Reactome " +
 			"EntitySet as a component";

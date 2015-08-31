@@ -41,7 +41,7 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="BioPAX L3 File"/>
+          <text value="BioPAX L3 File (*.owl)"/>
         </properties>
       </component>
       <component id="cf7e7" class="javax.swing.JLabel">
@@ -65,7 +65,7 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Species to Exclude"/>
+          <text value="Species File"/>
         </properties>
       </component>
       <component id="28e31" class="javax.swing.JSeparator">

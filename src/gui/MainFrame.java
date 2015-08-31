@@ -27,7 +27,7 @@ public class MainFrame {
 	}
 
 	private static void createAndShowGUI() {
-		JFrame frame = new JFrame("LogicSim");
+		JFrame frame = new JFrame("FastDAS");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setJMenuBar(MainFrame.getMenuBar());
 		frame.setContentPane(MainFrame.getContents());
@@ -93,13 +93,13 @@ public class MainFrame {
 		//Create the Help menu and its menu items:
 		JMenu helpMenu = new JMenu("Help");
 		menuBar.add(helpMenu);
-		JMenuItem aboutMenuItem = new JMenuItem("About LogicSim");
+		JMenuItem aboutMenuItem = new JMenuItem("About FastDAS");
 		helpMenu.add(aboutMenuItem);
 		helpMenu.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(new JFrame(), "LogicSim" + KeyParam.NEWLINE + "Version : " + KeyParam
-						.VERSION_NUMBER + KeyParam.NEWLINE + "By Liam Fearnley");
+				JOptionPane.showMessageDialog(new JFrame(), "FastDAS" + KeyParam.NEWLINE + "Version : " + KeyParam
+						.VERSION_NUMBER + KeyParam.NEWLINE + "By Liam G. Fearnley");
 			}
 		});
 		return menuBar;
