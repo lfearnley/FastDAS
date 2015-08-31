@@ -17,8 +17,9 @@ import java.io.File;
  */
 public class maininterface {
 
+	private static JFrame frame = new JFrame("FastDAS");
+
 	public static void main(String[] args) {
-		JFrame frame = new JFrame("FastDAS");
 		frame.setContentPane(new maininterface().mainform);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
@@ -101,7 +102,8 @@ public class maininterface {
 		cancelButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				frame.setVisible(false); //Invis the JFrame
+				frame.dispose(); //Dispose of the JFrame
 			}
 		});
 		//Listener for OK button

@@ -82,12 +82,14 @@ public class PathwayGeneratorDialog extends JDialog {
 		} else {
 			Model model = BioPAXInputHandler.readModelFromFile(biopaxFile);
 			TextOutputHandler.writePathwayHierarchy(model, outputDirectory);
+			setVisible(false);
 			dispose();
 		}
 	}
 
 	private void onCancel() {
 // add your code here if necessary
+		setVisible(false);
 		dispose();
 	}
 
@@ -95,6 +97,5 @@ public class PathwayGeneratorDialog extends JDialog {
 		PathwayGeneratorDialog dialog = new PathwayGeneratorDialog();
 		dialog.pack();
 		dialog.setVisible(true);
-		System.exit(0);
 	}
 }

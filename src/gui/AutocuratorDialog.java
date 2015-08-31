@@ -111,7 +111,7 @@ public class AutocuratorDialog extends JDialog {
 	}
 
 	private void onCancel() {
-// add your code here if necessary
+		setVisible(false);
 		dispose();
 	}
 
@@ -119,6 +119,5 @@ public class AutocuratorDialog extends JDialog {
 		AutocuratorDialog dialog = new AutocuratorDialog();
 		dialog.pack();
 		dialog.setVisible(true);
-		System.exit(0);
 	}
 }

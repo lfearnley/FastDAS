@@ -99,12 +99,14 @@ public class SpeciesGeneratorDialog extends JDialog {
 			BioPAXInputHandler.removePathways(pathwayFile, model);
 			TextOutputHandler.writeSaveFileForEditing(model, outputDirectory.getAbsolutePath() + System.getProperty
 					("file.separator") + "species.txt");
+			setVisible(false);
 			dispose();
 		}
 	}
 
 	private void onCancel() {
 // add your code here if necessary
+		setVisible(false);
 		dispose();
 	}
 
@@ -112,6 +114,5 @@ public class SpeciesGeneratorDialog extends JDialog {
 		SpeciesGeneratorDialog dialog = new SpeciesGeneratorDialog();
 		dialog.pack();
 		dialog.setVisible(true);
-		System.exit(0);
 	}
 }
